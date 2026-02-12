@@ -9,6 +9,7 @@ import (
 )
 
 type BoardService interface {
+	Create(board *models.Board) error
 }
 
 type boardService struct {
